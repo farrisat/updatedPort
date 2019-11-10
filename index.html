@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Boostrap CSS tag -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cardo|Oswald|Quicksand&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Jumpin' Lizards</title>
+    
+</head>
+
+<body>
+<!-- scroll to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Top Navigation Menu -->
+<div class="topnav active" style="height:auto; min-height:35px;">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks" style="display: none;">
+    <a href="./index.html" class="about navLinks">About</a>
+    <a href="#portfolio" class= "navLinks">Portfolio</a>
+    <a href="#contact" class="contact navLinks">Contact</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="headerwrapper container">
+   <div class="jumbotron">
+    <div class="col-sm-12 col-lg-12 quote">
+            <p class="quotetext">“Talk is cheap. Show me the code.”</p>
+            <p class= "quoteauthor">― Linus Torvalds</p>
+    </div>
+
+        <!--Profile Image--> 
+        <div>
+        <img src="./assets/images/hawk.jpg" class="img-fluid profilePic" alt="Alex's Profile Pic w/hawk" >
+       
+        </div>
+
+    </div>
+ </div>
+<!-- -_________----------------- -->
+  <!-- Portfolio Section -->
+<div id="portfolio">
+        <h2>Projects</h2>
+
+        <div class="bs-example">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active" id="selector"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" id="selector"></li></li>
+                        <li data-target="#myCarousel" data-slide-to="2" id="selector"></li></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../updatedPort/assets/images/Project.png"alt="Project One" height="500px" width="450px">
+                            <p>Group Project<br><a href="#" class="link">Go to the site!</a> <br>
+                                <a href="https://maxdavin.github.io/Project-One/" class="link">See the Code at GitHub</a></p>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../updatedPort/assets/images/GifGenerator.png" alt="Gif Generator" height="500px" width="450px">
+                            <p>GIPHY API <br> <a href="#" class="link">Go to the site!</a><br>
+                                <a href="#" class="link">See the Code at GitHub</a> </p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../updatedPort/assets/images/Dragon Game.png" alt="Dragon Game" height="500px" width="450px">
+                            <p>Dragon Game <br> <a href="#" class="link">Go to the project!</a><br>
+                                <a href="#" class="link">See the Code at GitHub</a></p>
+                           
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+      
+         
+      
+
+    
+</div>
+<!--Begin Contact ----------------------------------------------------- -->
+
+<div id="contact">
+
+
+<div id="main-container" class="container">
+    <section class="main-section-form email">
+      <h1 id="contact-label">Contact</h1>
+
+      <form id="contact-form"></form>
+        <ul class="list-inline">
+          <li>
+            <!-- <label for="name">Name</label> -->
+            <input type="text" id="name" name="name" placeholder="Name" required="required">
+          </li>
+          <li>
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" required="required">
+          </li>
+          <li>
+            <!-- <label for="message">Message</label> -->
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+</div>
+
+<!-- ---------------end contact -->
+                <!--Footer-->
+                <footer class="page-footer text-center text-md-center pt-4">        
+                                <!-- <nav class="navbar fixed-bottom navbar-light bg-light">
+                                <a class="navbar-brand mx-auto p-0 md 0"></a> -->
+                                <a href="https://www.linkedin.com/in/alexandria-farris-40708839/">Connect With Me on LinkedIn!</a><br>
+                                &copy; Alexandria Farris 
+                                   
+                            
+                              </footer>
+                <!--/.Footer-->
+ 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Link to js -->
+    <script src="./assets/javascript.js"></script>
+</body>
+</html>
